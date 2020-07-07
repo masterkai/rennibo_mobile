@@ -1,0 +1,1599 @@
+
+
+<!doctype html>
+<html class="no-js" lang="zh-TW">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-WQJVRHQ');</script>
+    <!-- End Google Tag Manager -->
+
+    
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#38373d" />
+    <meta name="google" content="notranslate">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="application-name" content="任你博">
+    <meta name="apple-mobile-web-app-title" content="任你博">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, shrink-to-fit=no">
+    
+    
+    <meta name="google-site-verification" content="3kY5SM7WXXnBoz-LM6NkikeWJL1qmIvQY5wNZ-YRQJs" />
+    <meta name="robot" content="index,follow" />
+
+    
+    <link rel="apple-touch-icon" sizes="192x192" href="assets/apple-touch-icon.png?v=1.1">
+    <link rel="icon" href="assets/ifavicon-32x32.png?v=1.3" type="image/png">
+    <link href="assets/favicon-32x32.png?v=1.3" rel="shortcut icon" sizes="32x32" />
+    <link href="assets/favicon-16x16.png?v=1.3" rel="shortcut icon" sizes="16x16" />
+    <link type="text/css" href="assets/css2/general.css?v=20200525a" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css2/loading.css">
+    <link rel="stylesheet" href="assets/css2/iziModal.css?v=1.2">
+    <link rel="stylesheet" href="assets/css2/font-awesome.css">
+    <link rel="stylesheet" href="assets/css2/master.css">
+    <link type="text/css" href="assets/css2/addon.css?v=20200525a" rel="stylesheet" />
+    <script type="text/javascript" src="Assets/js/pages/settings.js?v=1.3"></script>
+
+    <style>
+        body {
+            font-family: Microsoft YaHei !important;
+        }
+
+        .myOverlay {
+            width: 100%;
+            background-color: rgba(99, 87, 87, 0.3);
+            height: 100%;
+            position: fixed;
+            z-index: 100;
+            display: none;
+        }
+
+        .marquee {
+            color: white !important;
+            height: 30px !important;
+            line-height: 30px !important;
+        }
+
+
+        div.barZXC {
+            width: 100%;
+            z-index: 8;
+            top: 0px;
+        }
+
+        .fixedpercentZXC {
+            position: fixed;
+            height: 64px;
+            background-color: lightsteelblue;
+        }
+
+        .row.menu{
+            margin-top: 64px;
+            position: relative;
+        }
+
+        .schecked {
+            color: orange;
+        }
+
+        .fa-star {
+            font-size: 12px !important;
+        }
+
+
+        .rnbcontainer {
+            background: #1f0101 url(Assets/img/imgBG.jpg);
+            height: auto;
+            overflow: auto;
+            /*height: 100%;
+            margin: -64px 0;
+            padding: 64px 0;
+            padding-bottom:68px;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;*/
+        }
+
+        .row_c {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        }
+
+        /*.b_rnbcontainer
+        {
+            height: 100%;
+            margin: -64px 0;
+            padding: 64px 0;
+            padding-bottom:20px;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }*/
+
+        .rnbcontent {
+            /*overflow:auto;
+            height:100%;*/
+        }
+
+        .layui-m-layer {
+            color: #000 !important;
+        }
+
+        #div_test {
+            -webkit-tap-highlight-color: transparent;
+            cursor: pointer;
+            background: #38373d;
+            line-height: 30px;
+            height: 30px;
+        }
+    </style>
+
+
+    <script type="text/javascript" src="assets/js2/jquery-2.1.3.min.js"></script>
+    <script src="assets/js2/loading.js"></script>
+    <script type="text/javascript" src="assets/js2/iziModal.js"></script>
+    <script type="text/javascript" src="assets/js2/formvalidation.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="assets/css/iziModal.css">
+    <script type="text/javascript" src="assets/js/iziModal.js"></script>
+
+    <script type="text/javascript" src="assets/js2/jquery.lazy.js"></script>
+    <script type="text/javascript" src="assets/js2/jquery.lazy.plugins.js"></script>
+
+    <!-- slideshow -->
+    <script src="assets/js2/jssor.slider.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="assets/js/pages/general.js?v=202000612b"></script>
+    <script src="assets/js/layer/layer.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.cookie.js"></script>
+
+    <script>
+        $(function () {
+            var heightW = window.innerHeight;
+
+            
+            var afterLoginH = heightW - 168;
+            $('.rnbcontainer').css('min-height', afterLoginH + "px");
+            $('.rnbcontainer').css('padding-bottom', "69px");
+            
+
+        });
+
+        $(window).resize(function () {
+            var heightW = window.innerHeight;
+
+            
+            var afterLoginH = heightW - 168;
+            $('.rnbcontainer').css('min-height', afterLoginH + "px");
+            $('.rnbcontainer').css('padding-bottom', "69px");
+            
+        });
+    </script>
+
+    <!-- slide -->
+    <script type="text/javascript">
+
+        function showLoading() {
+            var option = { color: "#E2CF32", background: "rgba(250,247,218,.2)", timeout: 0, scale: 0 };
+            H5_loading.show(option);
+        }
+        function closeLoading() {
+            var option = { timeout: 0 };
+            H5_loading.hide(option);
+        }
+
+        jssor_1_slider_init = function () {
+
+            var jssor_1_SlideshowTransitions = [
+              { $Duration: 500, $Delay: 30, $Cols: 8, $Rows: 4, $Clip: 15, $SlideOut: true, $Formation: $JssorSlideshowFormations$.$FormationStraightStairs, $Assembly: 2049, $Easing: $Jease$.$OutQuad },
+              { $Duration: 500, $Delay: 80, $Cols: 8, $Rows: 4, $Clip: 15, $SlideOut: true, $Easing: $Jease$.$OutQuad },
+              { $Duration: 1000, x: -0.2, $Delay: 40, $Cols: 12, $SlideOut: true, $Formation: $JssorSlideshowFormations$.$FormationStraight, $Assembly: 260, $Easing: { $Left: $Jease$.$InOutExpo, $Opacity: $Jease$.$InOutQuad }, $Opacity: 2, $Outside: true, $Round: { $Top: 0.5 } },
+              { $Duration: 2000, y: -1, $Delay: 60, $Cols: 15, $SlideOut: true, $Formation: $JssorSlideshowFormations$.$FormationStraight, $Easing: $Jease$.$OutJump, $Round: { $Top: 1.5 } },
+              { $Duration: 1200, x: 0.2, y: -0.1, $Delay: 20, $Cols: 8, $Rows: 4, $Clip: 15, $During: { $Left: [0.3, 0.7], $Top: [0.3, 0.7] }, $Formation: $JssorSlideshowFormations$.$FormationStraightStairs, $Assembly: 260, $Easing: { $Left: $Jease$.$InWave, $Top: $Jease$.$InWave, $Clip: $Jease$.$OutQuad }, $Round: { $Left: 1.3, $Top: 2.5 } }
+            ];
+
+            var jssor_1_options = {
+                $AutoPlay: 1,
+                $SlideshowOptions: {
+                    $Class: $JssorSlideshowRunner$,
+                    $Transitions: jssor_1_SlideshowTransitions,
+                    $TransitionsOrder: 1
+                },
+                $ArrowNavigatorOptions: {
+                    $Class: $JssorArrowNavigator$
+                },
+                $BulletNavigatorOptions: {
+                    $Class: $JssorBulletNavigator$
+                }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 980;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+
+        function openNav() {
+            $("#idOverlay").css("display", "block");
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            $("#idOverlay").css("display", "none");
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+        var iAlert = 0;
+
+        var playersession = 'UserDetails';
+        
+        if (playersession) {
+            $(document).ready(function () {
+                //setTimeout(function () {
+                //    CheckPlayerSession();
+                //}, 3000);
+                CheckPlayerSession();
+            });
+        }
+
+        function CheckPlayerSession() {
+            $.ajax({
+                url: "func.html/playersession_ping",
+                type: "GET",
+                cache: false,
+                async: true,
+                contentType: "application/json",
+                datatype: "JSON",
+                success: function (result) {
+                    if (result.d.Data != "" && result.d.Data != null) {
+                        switch (result.d.Data) {
+                            case "SessionExpired":
+                            case "PlayerSessionNotFound":
+                                window.PLAYER_SESSION = 0;
+                                //alert('賬號未登入！');
+                                //CloseGamePopup();
+                                window.location.href = "index.html";
+                                break;
+                            default:
+                                window.PLAYER_SESSION = 1;
+                                break;
+                        }
+                    }
+
+                },
+            });
+            setTimeout(function () {
+                CheckPlayerSession();
+            }, 5000);
+        }
+
+        function redirectline() {
+            //var url = "https://line.me/R/ti/p/%40999xc";
+            var url = $('.lnkLine').prop('href');
+            if (url) {
+                window.open(url, 'popup_window', '_blank');
+            }
+        }
+
+        function ResetCSForm() {
+            $('#modalMessage span[class*=star_size]').removeClass('schecked');
+            $('#modalMessage #myTextarea').val(null);
+        }
+
+        function CloseModalOpenCSForm() {
+            $('#modal-contactus').iziModal('close');
+            //ResetCSForm();
+            $('#sendMsg').trigger('click');
+        }
+
+        function openCS() {
+            $('#test_2').trigger('click');
+        }
+    </script>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQJVRHQ"
+            height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div id="test_2" style="display: none;"></div>
+    <div id="sendMsg" style="display: none;"></div>
+    <div id="idOverlay" class="myOverlay" onclick="closeNav()">
+        <!-- begin side manu -->
+        <div id="mySidenav" class="sidenav">
+            <div style="padding-bottom: 30px;">
+                <img class="sidemanu-logo" src="assets/img/logo.png" />
+                <img src="assets/img/movBtnMenu0001.png" onclick="closeNav()" style="width: 40px; height: 40px; margin-top: 3px; position: absolute; top: 17px; left: 12px;" />
+            </div>
+
+            <a class="side-icon00" href="index.html">首頁</a>
+            <div style="border: 1px solid #cfcfcf;"></div>
+            <a class="side-icon_baccarat" href="livecasino.html">真人百家樂</a>
+            <a class="side-icon_sports_betting" href="sportsbook.html">體育博彩</a>
+            <a class="side-icon_poker" href="card.html">棋牌</a>
+            <a class="side-icon_slot_game" href="slotgame.html">電子遊戲</a>
+            <a class="side-icon_bingo" href="lottery.html">賓果彩票</a>
+            <a class="side-icon_fishing" href="arcade.html">捕魚王</a>
+            <a class="side-icon_gaming" href="esports.html">電競</a>
+            <div style="border: 1px solid #cfcfcf;"></div>
+            
+            <a class="side-icon01" href="muserProfile.html">會員中心</a>
+            <a class="side-icon02" href="mtransfer.html">平臺轉帳</a>
+            <a class="side-icon03" href="mwithdraw.html">在線提款</a>
+            <a href="mdeposit_pg.html" id="depo_pg" style="display: block" class="side-icon04">在線存款</a>
+            <a href="mdeposit_cash.html" id="depo_cash" style="display: none;" class="side-icon04">在線存款</a>
+            <div style="border: 1px solid #cfcfcf;"></div>
+            
+
+            <a class="side-icon05" href="promotion.html">優惠說明</a>
+            <a class="side-icon_product" href="products.html">產品總覽頁</a>
+            <a class="side-icon06" href="faq.html">常見問題</a>
+            <a class="side-icon07" id="mMaintenance">維修時間</a>
+            <a class="side-icon08" href="mapp.html">APP下載</a>
+            
+            <a class="side-icon09" href="referral.html">推薦好友</a>
+            
+            <a id="hidblog1" class="side-icon12 blogitem" style="display:none;" href="blog">部落格</a>
+            <a class="side-icon10" href="agency.html">合營代理</a>
+            <a class="side-icon13" href="aboutus.html">關於任你博</a>
+
+            
+            <div style="border: 1px solid #cfcfcf;"></div>
+            <a class="side-icon11" href="logout.html">登出</a>
+            
+        </div>
+        <!-- end side manu -->
+    </div>
+
+    <!-- begin header -->
+    <div class="barZXC fixedpercentZXC">
+        <div class="row padding user-bar">
+
+            <div class="topMenu">
+                <img src="assets/img/movBtnMenu0000.png" onclick="openNav()" style="width: 40px; height: 40px; margin-top: 3px;" alt="任你博娛樂城-導覽圖示" />
+                
+            </div>
+
+            <div class="col-4">
+                <a href="index.html">
+                    <img src="assets/img/logo.png" alt="任你博logo" class="logo_style">
+                </a>
+            </div>
+
+
+            <div onclick="openCS();" style="float: right; margin-left: 3px; width: 36px; margin-top: 4px;">
+                <center>
+				    <img src="assets/img/imgBtnCustomerSupport_active.png" border="0" class="topContact" alt="任你博娛樂城-客服">
+			    </center>
+            </div>
+
+
+            
+            <div style="float: right; margin-right: 10px;">
+                <div class="col-12" style="padding: 11px 0 0 0px;">
+                    <a href="logout.html">
+                        <button type="button" class="logout-button" style="text-align: center; width: 80px !important; font-size: 14px !important">登出</button>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- end header -->
+
+    <!-- begin login bar -->
+
+    
+
+    <div class="row menu" style="background: #38373d;">
+
+        <div class="col-7" style="float: left; padding-left: 10px; padding-top: 5px;">
+            <a ontouchstart="" style="color: #e2e2e2;" href="#">歡迎: sup0001</a>
+        </div>
+
+        <div class="col-5" style="padding-right: 10px; float: right; text-align: right;">
+            <div style="float: right; margin-top: 6px;"><a style="text-align: right; color: #e2e2e2;" href="#" class="mywallet">500154.08</a></div>
+            <div style="float: right; margin-top: 4px;">
+                <img src="assets/img/imgBalanceIcon.png" style="width: 25px;" />
+            </div>
+        </div>
+        <div class="col-12" style="padding-left: 10px;">
+            <div id="star_div">
+                <span id="star_1" class="fa fa-star schecked"></span>
+                <span id="star_2" class="fa fa-star"></span>
+                <span id="star_3" class="fa fa-star"></span>
+                <span id="star_4" class="fa fa-star"></span>
+                <span id="star_5" class="fa fa-star"></span>
+                <span id="star_6" class="fa fa-star"></span>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- end login bar -->
+
+    <div id="div_test" style="">
+        <div id="news" style="font-size: 15px;">
+            <div class="marquee ng-isolate-scope">
+                <marquee class="marquee" direction="left" loop="-1" scrollamount="7">
+				    •&emsp;【存款公告】：親愛的會員您好，為了保障會員資金安全性，使用信用卡、ATM轉帳以及VIP專用帳戶存款，請務必使用本人帳戶，若使用非本人帳戶存款將一律扣除營利退本金處理，相關損失需自行承擔風險，請見諒。&emsp;&emsp;&emsp;•&emsp;【維護公告】：親愛的會員您好，歐博空戰進行維護，造成不便請見諒，有問題可以隨時連絡客服中心!&emsp;&emsp;&emsp;•&emsp;【取款公告】：親愛的會員您好，由於體育相關注單會有因改判賽事等等因素而進行注單重新結算，固即日起，本網站需進行出款時，體育相關注單須全數派彩完畢才可處理支付款項，若有未派彩注單請耐心等候派彩完畢，如有相關取款問題歡迎詢問24H在線客服，謝謝。&emsp;&emsp;&emsp;•&emsp;任你博娛樂城提供您24小時線上客服及儲值出金火速到帳服務，讓您隨時安心、愉快遊玩遊戲。&emsp;&emsp;&emsp;•&emsp;【優惠公告】：歡迎您進入任你博娛樂集團，目前推出首存優惠，滿1000送500，最高送1000優惠金，快聯繫客服領取喔!!!!&emsp;&emsp;&emsp;</marquee>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    
+
+
+    <div class="row menu-bar" style="z-index: 8">
+        <div class="footercol-2 paddingMenu align-center menu-bottom-font border-right-white">
+            <a href="mtransfer.html">
+                <center><img src="assets/img/imgBtnTransfer.png" border="0" style="display:block; height:18px;"></center>
+                平臺轉帳
+            </a>
+        </div>
+        <div class="footercol-2 paddingMenu align-center menu-bottom-font border-right-white">
+            <a href="mdeposit_pg.html" id="footer_depo_pg" style="display: inline">
+                <center><img src="assets/img/imgBtnDeposit.png" border="0" style="display:block; height:18px;"></center>
+                在線存款
+            </a>
+            <a href="mdeposit_cash.html" id="footer_depo_cash" style="display: none;">
+                <center><img src="assets/img/imgBtnDeposit.png" border="0" style="display:block; height:18px;"></center>
+                在線存款
+            </a>
+        </div>
+        <div class="footercol-2 paddingMenu align-center menu-bottom-font border-right-white">
+            <a href="mwithdraw.html">
+                <center><img src="assets/img/imgBtnWithdrawal.png" border="0" style="display:block; height:18px;"></center>
+                在線提款
+            </a>
+        </div>
+        <div class="footercol-2 paddingMenu align-center menu-bottom-font border-right-white" id="test">
+            <a href="javascript:;">
+                <center><img src="assets/img/imgBtnCustomerSupport.png" border="0" style="display:block; height:18px;"></center>
+                在線客服
+            </a>
+        </div>
+        <div class="footercol-2 paddingMenu align-center menu-bottom-font ">
+            <a href="muserprofile.html">
+                <center><img src="assets/img/imgBtnProfile.png" border="0" style="display:block; height:18px;"></center>
+                會員中心
+            </a>
+        </div>
+    </div>
+
+    <div class="row" style="width: 100%; position: fixed; background: #163a64; bottom: 0; text-align: center; z-index: 7; line-height: 20px;">
+        <div style="">
+            <p style="font-size: 10px; color: #c7c7c7; margin: 0; margin-block-end: 0px !important;">【任你博】 所有版權未經本公司合法授權任意復制版權必究</p>
+        </div>
+    </div>
+
+    
+
+
+    <!-- no login min-height:24px;-->
+
+    <div class="rnbcontainer">
+        <!-- CONTENT -->
+        
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
+    <script type="text/javascript" src="Assets/js/pages/mhistory.js?v=2020528d"></script>
+    <style>
+        #jssor_1 {
+            display: none;
+        }
+
+        #id-username {
+            display: none;
+        }
+    </style>
+    <link href="/assets/css/jquery-ui.css" rel="stylesheet" />
+    <link href="/assets/css/datetimepicker/jquery-ui-timepicker-addon.css" rel="stylesheet" />
+
+    <div class="row padding border-bottom" style="color: #fff04b; text-align: center;">
+        <div style="position: absolute">
+            <a href="index.html">
+                <img src="assets/img/imgBtnBack2.png" style="margin-top: 8px;" class="imgMenu"></a>
+        </div>
+        <img src="Assets/img/icon/movTranHistory0001.png" height="35" style="margin-top: 3px;" />
+    </div>
+
+    <form method="post" action="./mhistory.html" id="Form1" class="form form-horizontal container_history">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="tZ6Kov7hIdtcbLEFjR7xIC/Yo8C18NB6T1tU7pL+TkjrBxK76sA4MZW1lgRFIbqGPeKxmEf5kHQS6+qrbti8RRs1hquIDneOYFC2Q/DfBYH7gbr3dRUnJyjZjjtcq1taLfHRyUs0ZctxXnS57ma+QCf7MrfTHHJSvDC5Fgrv5zuA2/4ulcYjObq51k/CPwHck+2Q87XNGY+sTbruXLs2WXw0aY2EsPOlnfsk9E9dWhoov1/UBwiHQft6N9DovHKNRv7AbfHkNr1uCpsJL/h8m7uE6PA+kjgzcbZ10p6gs6bGi7pWCSt3eKUqsKYGvzc1I9HDEOrgO7OOLWcbnIxBUQKS7aFaYxFgsmYXNe9mwXkipmYDPFblRBW+/olmXAiqFp9GCcJKX1lIrUokxfpIuHtBi3upfh9FgjDdCBu1hlyp0AGQuKkrlDx/4nNeus+GQQWKkIFUE+UG+Z8By2hmUTnu8z5tV0M3m9beSYPsc2e29k3bNp0bKf/pa7CyE72wQdhAnYjQ3JqFpWt7ZnB5HBuLpPqdnCvnCs5ISlQA40ini2BxF7nkI6yNduRX0SJbh8AojUOWGbdypRqP/mbPcCJa6ZfMCzCwb31Z2zLG2Zo4z+D256tGkb/1s1KZ2g69/eaDEExUL33YrH4euVZOCA==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['Form1'];
+if (!theForm) {
+    theForm = document.Form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZCytzjO8pb5Fb-mFdu7qv3idZcGAhNp-rJH1kpN9k8YSZ2qWZWzzfPL6g2ECcwjT1Q2&amp;t=636284082552661246" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=D9drwtSJ4hBA6O8UhT6CQtaS5y0Cmd3E3GMELsIpD6tg61IxaUGT6FqAbVgq86kUT0NOTl2TQbSopexOTCJSpACmxnDyXL9PSB0MpTZyZc3usE1bbcOBDFwO14mPqXt_8V41BpK4mpeUveNX2suLWZT11cSkjMCFzMs3iG-BF581&amp;t=ffffffffcce8aaf2" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=JnUc-DEDOM5KzzVKtsL1tdiFsqbqvlAR6gWDxwXcluqFcMJeol585nUMCqUJVDCOm-NUrDQ1RtxxJkYzdlhNpprsbW-g7yYPy4q-C_WMNymFXYbEawNUmE3-1WduoCUSQpl_GPKMSzlrRBKw535uSk0jI5cW_Q-IHTmqz0nnNafYZwYXVOyEE2TEzHHPCanx0&amp;t=ffffffffcce8aaf2" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="0BD73F75" />
+</div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$MainContent$ScriptManager1', 'Form1', ['tctl00$MainContent$UpdatePanel1','MainContent_UpdatePanel1'], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        <div id="MainContent_UpdatePanel1">
+	
+                <div class="row paddingLeft paddingRight paddingBottom">
+                    <div class="col-3 normal-text paddingTop15">交易類型</div>
+                    <div class="col-1 normal-text align-right paddingTop15">:&nbsp;</div>
+                    <div class="col-8 paddingTop">
+                        <select name="tsType" id="tsType" style="" onchange="historyOnChange()" class="form-control tsType">
+                            <option value="deposit">存款(VIP)</option>
+                            <option value="depositPG">存款 (網上支付)</option>
+                            <option value="withdrawal">提款</option>
+                            <option value="transfer">轉帳</option>
+                            <option value="promotion">優惠</option>
+                            <option value="bet">下注歷史</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="div_historyDate">
+                    <div class="row paddingLeft paddingRight paddingBottom">
+                        <div class="col-12 normal-text paddingTop15">日期 :</div>
+                    </div>
+
+                    <div class="row paddingLeft paddingRight paddingBottom">
+                        <div class="col-6 paddingTop5 paddingRight">
+                            <input type="text" id="datetimepicker5" class="form-field history_start_date datepickerFromDate" placeholder="MM/DD/YYYY" readonly>
+                        </div>
+                        <div class="col-6 paddingTop5 paddingLeft">
+                            <input type="text" id="datetimepicker6" class="form-field history_end_date datepickerToDate" placeholder="MM/DD/YYYY" readonly>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row paddingLeft paddingRight paddingBottom">
+                    <div class="col-12 normal-text paddingTop15">
+                        <center><a class="form-btn submitreq btnHistory">提交</a></center>
+                    </div>
+                </div>
+
+
+                <div class="row padding border-bottom-1px">
+                    <div class="col-12"></div>
+                </div>
+                <div class="row padding">
+                    <div class="col-12"></div>
+                </div>
+
+
+            
+</div>
+    </form>
+
+    <script src="/web/assets/js/jquery-ui-min.js"></script>
+    <script src="/assets/js/datetimepicker/jquery-ui-i18n.js"></script>
+    <script src="/assets/js/datetimepicker/jquery-ui-timepicker-addon.js"></script>
+    <script src="/assets/js/datetimepicker/i18n/jquery-ui-timepicker-addon-i18n.js"></script>
+    <script src="/assets/js/datetimepicker/jquery-ui-sliderAccess.js"></script>
+    <script>
+        $(document).ready(function () {
+            var date = new Date();
+            var currentMonth = date.getMonth();
+            var currentDate = date.getDate();
+            var currentYear = date.getFullYear();
+
+            var startDate = new Date(currentYear, currentMonth, currentDate);
+            var startMonth = startDate.getMonth() + 1;
+            var startDay = startDate.getDate();
+            var startYear = startDate.getFullYear();
+
+            var startDateFormat = (startMonth < 10 ? '0' : '') + startMonth + '/' +
+                (startDay < 10 ? '0' : '') + startDay + '/' +
+                startYear;
+            var endDateFormat = ((currentMonth + 1) < 10 ? '0' : '') + (currentMonth + 1) + '/' +
+                    (currentDate < 10 ? '0' : '') + currentDate + '/' +
+                    currentYear;
+
+            $('.datepickerFromDate').val(startDateFormat);
+            $('.datepickerToDate').val(endDateFormat);
+
+            $('.datepickerFromDate').datepicker({
+                dateFormat: 'mm/dd/yy',
+                maxDate: new Date(currentYear, currentMonth, currentDate)
+            });
+
+            $('.datepickerFromDate').change(function () {
+                var fromDate = $(this).datepicker('getDate');
+                var toDate = $(this).parents('.container_history').find('.datepickerToDate').datepicker('getDate');
+                var setStartDate = new Date(fromDate.getFullYear(), fromDate.getMonth(), fromDate.getDate());
+                if (fromDate > toDate - 1) {
+                    $(this).parents('.container_history').find('.datepickerToDate').datepicker("setDate", setStartDate);
+                }
+            });
+
+            $('.datepickerToDate').datepicker({
+                dateFormat: 'mm/dd/yy',
+                maxDate: new Date(currentYear, currentMonth, currentDate)
+            });
+
+            $('.datepickerToDate').change(function () {
+                var fromDate = $(this).parents('.container_history').find('.datepickerFromDate').datepicker('getDate');
+                var toDate = $(this).datepicker('getDate');
+                var setStartDate = new Date(toDate.getFullYear(), toDate.getMonth(), toDate.getDate());
+                if (toDate < fromDate - 1) {
+                    $(this).parents('.container_history').find('.datepickerFromDate').datepicker("setDate", setStartDate);
+                }
+            });
+        });
+    </script>
+
+    </div>
+
+    <div id="modal-contactus" class="contactus">
+    </div>
+
+    <div id="modal-profile" class="profile">
+    </div>
+
+    <div id="modal-maintenance" class="mMaintenance">
+    </div>
+
+
+    <div class="maintenance_content" style="display: none">
+        <div style="width: 100%; min-height: 500px;">
+            <div style="width: 100px; height: 30px; margin-top: 20px !important; margin: 0 auto; text-align: center; line-height: 30px; color: black; background: linear-gradient(#ffe162 0%, #d0963d 100%)">
+                維護時間
+            </div>
+
+            <div id="tab_0" style="display: none; width: 100%; padding: 10px; margin-top: 5px; float: left;">
+                <div style="margin-bottom: 20px; text-align: center;">
+                    <div style="margin-bottom: 10px;"><font style="font-weight: bold; color: white !important">緊急維修</font></div>
+                    
+                </div>
+            </div>
+
+            <div id="tab_1" style="width:100%;padding:10px;margin-top:5px;display:block;float:left;">
+                <div style="margin-bottom: 20px; text-align: center;">
+                    <div style="margin-bottom: 10px;"><font style="font-weight: bold; color: white !important">星期一</font></div>
+                    <div style="border-bottom:2px solid #114292;width:50%;height:28px;font-size:15px;float:left;color:white;text-align:center;line-height:28px;background:#2360ab">Super體育</div><div style="border-bottom:2px solid #114292;width:50%;font-size:15px;height:28px;float:left;color:black;text-align:center;line-height:28px;background:#ffe762">12:00 至 16:30</div><br /><div style="border-bottom:2px solid #114292;width:50%;height:28px;font-size:15px;float:left;color:white;text-align:center;line-height:28px;background:#2360ab">WM百家樂</div><div style="border-bottom:2px solid #114292;width:50%;font-size:15px;height:28px;float:left;color:black;text-align:center;line-height:28px;background:#ffe762">12:00 至 14:30</div><br /><div style="border-bottom:2px solid #114292;width:50%;height:28px;font-size:15px;float:left;color:white;text-align:center;line-height:28px;background:#2360ab">六合彩539</div><div style="border-bottom:2px solid #114292;width:50%;font-size:15px;height:28px;float:left;color:black;text-align:center;line-height:28px;background:#ffe762">12:30 至 16:30</div><br /><div style="border-bottom:2px solid #114292;width:50%;height:28px;font-size:15px;float:left;color:white;text-align:center;line-height:28px;background:#2360ab">歐博</div><div style="border-bottom:2px solid #114292;width:50%;font-size:15px;height:28px;float:left;color:black;text-align:center;line-height:28px;background:#ffe762">08:00 至 12:00</div><br /><div style="border-bottom:2px solid #114292;width:50%;height:28px;font-size:15px;float:left;color:white;text-align:center;line-height:28px;background:#2360ab">沙龍百家樂</div><div style="border-bottom:2px solid #114292;width:50%;font-size:15px;height:28px;float:left;color:black;text-align:center;line-height:28px;background:#ffe762">09:00 至 13:30</div><br />
+                </div>
+            </div>
+
+            <div id="tab_2" style="width:100%;padding:10px;margin-top:5px;display:block;float:left;">
+                <div style="margin-bottom: 5px; text-align: center;">
+                    <div style="margin-bottom: 10px;"><font style="font-weight: bold; color: white !important">星期二</font></div>
+                    <div style="border-bottom:2px solid #114292;width:50%;height:28px;font-size:15px;float:left;color:white;text-align:center;line-height:28px;background:#2360ab">RTG天地</div><div style="border-bottom:2px solid #114292;width:50%;font-size:15px;height:28px;float:left;color:black;text-align:center;line-height:28px;background:#ffe762">09:00 至 09:30</div><br />
+                </div>
+            </div>
+
+            <div id="tab_3" style="width:100%;padding:10px;margin-top:5px;display:block;float:left;">
+                <div style="margin-bottom: 5px; text-align: center;">
+                    <div style="margin-bottom: 10px;"><font style="font-weight: bold; color: white !important">星期三</font></div>
+                    <div style="border-bottom:2px solid #114292;width:50%;height:28px;font-size:15px;float:left;color:white;text-align:center;line-height:28px;background:#2360ab">DG百家樂</div><div style="border-bottom:2px solid #114292;width:50%;font-size:15px;height:28px;float:left;color:black;text-align:center;line-height:28px;background:#ffe762">07:00 至 10:00</div><br /><div style="border-bottom:2px solid #114292;width:50%;height:28px;font-size:15px;float:left;color:white;text-align:center;line-height:28px;background:#2360ab">MG棋牌</div><div style="border-bottom:2px solid #114292;width:50%;font-size:15px;height:28px;float:left;color:black;text-align:center;line-height:28px;background:#ffe762">11:00 至 13:00</div><br /><div style="border-bottom:2px solid #114292;width:50%;height:28px;font-size:15px;float:left;color:white;text-align:center;line-height:28px;background:#2360ab">幸運棋牌</div><div style="border-bottom:2px solid #114292;width:50%;font-size:15px;height:28px;float:left;color:black;text-align:center;line-height:28px;background:#ffe762">07:00 至 09:00</div><br />
+                </div>
+            </div>
+
+            <div id="tab_4" style="width: 100%; padding: 10px; margin-top: 5px; display: none; float: left;">
+                <div style="margin-bottom: 5px; text-align: center;">
+                    <div style="margin-bottom: 10px;"><font style="font-weight: bold; color: white !important">星期四</font></div>
+                    
+                </div>
+            </div>
+
+            <div id="tab_5" style="display:block;width:100%;padding:10px;margin-top:5px;float:left;">
+                <div style="margin-bottom: 5px; text-align: center;">
+                    <div style="margin-bottom: 10px;"><font style="font-weight: bold; color: white !important">星期五</font></div>
+                    <div style="border-bottom:2px solid #114292;width:50%;height:28px;font-size:15px;float:left;color:white;text-align:center;line-height:28px;background:#2360ab">OB Sport</div><div style="border-bottom:2px solid #114292;width:50%;font-size:15px;height:28px;float:left;color:black;text-align:center;line-height:28px;background:#ffe762">13:00 至 14:00</div><br />
+                </div>
+            </div>
+
+            <div id="tab_6" style="display: none; width: 100%; padding: 10px; margin-top: 5px; float: left;">
+                <div style="margin-bottom: 5px; text-align: center;">
+                    <div style="margin-bottom: 10px;"><font style="font-weight: bold; color: white !important">星期六</font></div>
+                    
+                </div>
+            </div>
+
+            <div id="tab_7" style="display: none; width: 100%; padding: 10px; margin-top: 5px; float: left;">
+                <div style="margin-bottom: 5px; text-align: center;">
+                    <div style="margin-bottom: 10px;"><font style="font-weight: bold; color: white !important">星期日</font></div>
+                    
+                </div>
+            </div>
+
+            <div style="width: 100%; padding: 10px; margin-top: 5px;">
+                <div style="bottom: 5px; text-align: center; color: white !important">
+                    因發現有玩家利用百家樂彩金制度雙面投注套利，於是調整百家樂彩金制度，詳情請參閱優惠說明
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contactus_content" style="display: none">
+        <table style="width: 100%" id="Table1">
+            <tbody>
+                <tr>
+                    <td class="dlicon" style="" align="center" valign="middle"></td>
+                </tr>
+                <tr>
+                    <td class="dlicon01" style="border-bottom: 1.4px solid black;" align="center" valign="middle">
+                        <table class="dlboxtable01" border="0" style="width: 200px; height: 54px;" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr style="border-bottom: 0px solid white;">
+                                    <td>
+                                        <div style="float: left">
+                                            <img src="assets/img/call.png" style="width: 45px">
+                                        </div>
+
+                                        <div style="float: left; width: 110px; margin-left: 20px; color: white; font-weight: 400; line-height: 25px; font-size: 15px">
+                                            24X7
+                                                            <br />
+                                            在線客服
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td onclick="redirectline()" class="dlicon01" style="border-bottom: 1.4px solid black;" align="center" valign="middle">
+                        <table class="dlboxtable01" border="0" style="width: 200px; height: 50px;" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr style="border-bottom: 0px solid white;">
+                                    <td>
+                                        <div class="lineqr" style="width: 100%; height: 100px; text-align: center; padding-top: 5px; padding-bottom: 5px;">
+                                            <img src="assets/img/rnbqr.png" style="height: 100px;">
+                                        </div>
+                                        <div style="height: 10px;"></div>
+                                        <div style="float: left">
+                                            <img src="assets/img/line.png" style="width: 40px">
+                                        </div>
+                                        <a class="lnkLine" href="https://line.me/R/ti/p/%40999xc" target="_blank">
+                                            <div class="contacts" style="float: left; margin-left: 20px; width: 100px; color: white; font-weight: 400; line-height: 40px; font-size: 15px">@999xc </div>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <td class="dlicon01" style="border-bottom: 1.4px solid black;" align="center" valign="middle">
+                    <table class="dlboxtable01" border="0" style="width: 200px; height: 50px;" cellspacing="0" cellpadding="0">
+                        <tbody>
+                            <tr style="border-bottom: 0px solid white;">
+                                <td>
+                                    <div style="float: left">
+                                        <img src="assets/img/wechat.png" style="width: 40px">
+                                    </div>
+                                    <div class="contacts cws" style="float: left; margin-left: 20px; width: 100px; color: white; font-weight: 400; line-height: 40px; font-size: 15px">love999xc </div>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <tr>
+                </tr>
+
+                <tr onclick=" CloseModalOpenCSForm(); ">
+                    <td class="dlicon01" align="center" valign="middle">
+                        <table class="dlboxtable01" border="0" style="width: 200px; height: 50px;" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr style="border-bottom: 0px solid white;">
+                                    <td>
+                                        <div style="float: left">
+                                            <img src="assets/img/message.png?=1.2" style="width: 40px">
+                                        </div>
+                                        <div class="contacts" style="float: left; margin-left: 20px; width: 100px; color: white; font-weight: 400; line-height: 40px; font-size: 15px">客訴信箱 </div>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="profile_content" style="display: none">
+        <table style="width: 100%" id="Table2">
+            <tbody>
+                <tr>
+                    <td class="dlicon" style="" align="center" valign="middle"></td>
+                </tr>
+                <tr>
+                    <td class="dlicon01" style="border-bottom: 1.4px solid black;" align="center" valign="middle">
+                        <table class="dlboxtable01" border="0" style="width: 200px; height: 54px;" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr style="border-bottom: 0px solid white;">
+                                    <td>
+                                        <div style="float: left">
+                                            <img src="assets/img/imgProfileIcon.png" style="width: 45px">
+                                        </div>
+
+                                        <a href="muserprofile.html">
+                                            <div style="float: left; width: 110px; margin-left: 30px; color: white; font-weight: 400; line-height: 45px; font-size: 17px">
+                                                會員資料
+                                            </div>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="dlicon01" style="border-bottom: 1.4px solid black;" align="center" valign="middle">
+                        <table class="dlboxtable01" border="0" style="width: 200px; height: 50px;" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr style="border-bottom: 0px solid white;">
+                                    <td>
+
+                                        <div style="float: left">
+                                            <img src="assets/img/imgEditProfileIcon.png" style="width: 45px; background-size: 100px 100px;">
+                                        </div>
+
+                                        <a href="mresetpassword.html">
+                                            <div style="float: left; width: 110px; margin-left: 30px; color: white; font-weight: 400; line-height: 45px; font-size: 17px">
+                                                變更資料
+                                            </div>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="dlicon01" style="border-bottom: 1.4px solid black;" align="center" valign="middle">
+                        <table class="dlboxtable01" border="0" style="width: 200px; height: 50px;" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr style="border-bottom: 0px solid white;">
+                                    <td>
+
+                                        <div style="float: left">
+                                            <img src="assets/img/imgTransactionRecordIcon.png" style="width: 45px">
+                                        </div>
+
+                                        <a href="mhistory.html">
+                                            <div style="float: left; width: 110px; margin-left: 30px; color: white; font-weight: 400; line-height: 45px; font-size: 17px">
+                                                交易紀錄
+                                            </div>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="dlicon01" style="border-bottom: 1.4px solid black;" align="center" valign="middle">
+                        <table class="dlboxtable01" border="0" style="width: 200px; height: 50px;" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr style="border-bottom: 0px solid white;">
+                                    <td>
+
+                                        <div style="float: left">
+                                            <img src="assets/img/imgBetHistoryIcon.png" style="width: 45px">
+                                        </div>
+
+                                        <a href="mbethistory.html">
+                                            <div style="float: left; width: 110px; margin-left: 30px; color: white; font-weight: 400; line-height: 45px; font-size: 17px">
+                                                投注紀錄
+                                            </div>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="dlicon01" style="border-bottom: 1.4px solid black;" align="center" valign="middle">
+                        <table class="dlboxtable01" border="0" style="width: 200px; height: 50px;" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr style="border-bottom: 0px solid white;">
+                                    <td>
+
+                                        <div style="float: left">
+                                            <img src="assets/img/imgDownloadIcon.png" style="width: 45px">
+                                        </div>
+
+                                        <a href="mapp.html">
+                                            <div style="float: left; width: 110px; margin-left: 30px; color: white; font-weight: 400; line-height: 45px; font-size: 17px">
+                                                APP 下載
+                                            </div>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="dlicon01" align="center" valign="middle">
+                        <table class="dlboxtable01" border="0" style="width: 200px; height: 50px;" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr style="border-bottom: 0px solid white;">
+                                    <td>
+                                        <div class="col-12 normal-text paddingTop15" style="padding-bottom: 15px;">
+                                            <center>
+                                            
+                                            <a href="javascript:void(0);" id="btnLogout" onclick="javascript: ClosePopup();" class="form-btn submitreq">登出</a>
+                                        </center>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+
+    <!-- Modal Announcement -->
+    <div id="modalAnnouncement" style="display: none;">
+        <div class="iziModal-header iziModal-noSubtitle" style="background: rgb(136, 160, 185); padding-right: 40px;">
+            <h2 class="iziModal-header-title">公告</h2>
+            <p class="iziModal-header-subtitle"></p>
+            <div class="iziModal-header-buttons">
+                <a href="javascript:void(0)" class="iziModal-button iziModal-button-close" data-izimodal-close=""></a>
+            </div>
+        </div>
+        <div class="iziModal-wrap" style="height: 250px;">
+            <div class="iziModal-content" style="padding: 0px;">
+                <div class="mymodalcontent" style="color: white; font-size: 15px;">
+                    •&emsp;【存款公告】：親愛的會員您好，為了保障會員資金安全性，使用信用卡、ATM轉帳以及VIP專用帳戶存款，請務必使用本人帳戶，若使用非本人帳戶存款將一律扣除營利退本金處理，相關損失需自行承擔風險，請見諒。<br />•&emsp;【維護公告】：親愛的會員您好，歐博空戰進行維護，造成不便請見諒，有問題可以隨時連絡客服中心!<br />•&emsp;【取款公告】：親愛的會員您好，由於體育相關注單會有因改判賽事等等因素而進行注單重新結算，固即日起，本網站需進行出款時，體育相關注單須全數派彩完畢才可處理支付款項，若有未派彩注單請耐心等候派彩完畢，如有相關取款問題歡迎詢問24H在線客服，謝謝。<br />•&emsp;任你博娛樂城提供您24小時線上客服及儲值出金火速到帳服務，讓您隨時安心、愉快遊玩遊戲。<br />•&emsp;【優惠公告】：歡迎您進入任你博娛樂集團，目前推出首存優惠，滿1000送500，最高送1000優惠金，快聯繫客服領取喔!!!!<br />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Announcement -->
+
+
+    <!-- Modal Transfer SITE -->
+    <div id="modal" style="display: none;">
+        <div class="iziModal-header iziModal-noSubtitle" style="background: rgb(136, 160, 185); padding-right: 40px;">
+            <h2 class="iziModal-header-title">遊戲轉帳</h2>
+            <p class="iziModal-header-subtitle"></p>
+            <div class="iziModal-header-buttons">
+                <a href="javascript:void(0)" class="iziModal-button iziModal-button-close" data-izimodal-close=""></a>
+            </div>
+        </div>
+        <div class="iziModal-wrap" style="height: 250px;">
+            <div class="iziModal-content" style="padding: 0px;">
+                <div class="mymodalcontent">
+                    <!-- wallet image -->
+                    <div style="width: 250px; height: 80px; margin: 0 auto; margin-top: 10px !important;">
+                        <div style="width: 115px; height: 80px; float: left; text-align: center;">
+                            <img src="assets/img/imgMainWalletFromIcon.png" />
+                        </div>
+                        <div style="width: 20px; height: 80px; float: left; text-align: center;">
+                            <img style="margin-top: 30px;" src="assets/img/imgArrowIcon.png" />
+                        </div>
+                        <div style="width: 115px; height: 80px; float: left; text-align: center;">
+                            <img src="assets/img/imgMainWalletToIcon.png" />
+                        </div>
+                    </div>
+                    <div style="width: 250px; height: 20px; margin: 0 auto">
+                        <div style="width: 125px; height: 20px; text-align: center; float: left;">
+                            <label id="txtTransferFrom" for="txtTransferFrom" style="font-size: 12px; color: #fff"></label>
+                        </div>
+                        <div style="width: 125px; height: 20px; text-align: center; float: left;">
+                            <label id="txtTransferTo" for="txtTransferTo" style="font-size: 12px; color: #fff"></label>
+                        </div>
+                    </div>
+
+                    <div style="width: 250px; height: 20px; margin-top: 5px !important; margin: 0 auto; margin-bottom: 10px;">
+                        <div style="width: 125px; height: 20px; text-align: center; float: left;">
+                            <label id="txtTransferFromBalance" for="txtTransferFromBalance" style="font-size: 16px; color: #ffcc00"></label>
+                        </div>
+                        <div style="width: 125px; height: 20px; text-align: center; float: left;">
+                            <label id="txtTransferToBalance" for="txtTransferToBalance" style="font-size: 16px; color: #ffcc00"></label>
+                        </div>
+                    </div>
+
+                    <div style="width: 250px; height: 30px; margin-top: 5px !important; margin: 0 auto">
+                        <input name="ctl00$MainContent$uname" type="text" id="txtMoney" class="font-xl txt_transfer op-40 op-35" placeholder="輸入轉入的金額" onkeydown="isNumber(event)" inputmode="numeric" pattern="[0-9]*">
+                    </div>
+
+                    <div style="width: 250px; height: 170px; margin-top: 15px !important; margin: 0 auto">
+                        <button id="btn_money1" style="width: 115px; float: left; height: 32px; border: 2px solid #018fde; border-radius: 12px; font-size: 15px; color: #ffcc00; background-color: #033b78">100</button>
+                        <button id="btn_money2" style="width: 115px; float: right; height: 32px; border: 2px solid #018fde; border-radius: 12px; font-size: 15px; color: #ffcc00; background-color: #033b78">500</button>
+                        <button id="btn_money3" style="width: 115px; float: left; height: 32px; margin-top: 10px; border: 2px solid #018fde; border-radius: 12px; font-size: 15px; color: #ffcc00; background-color: #033b78">1000</button>
+                        <button id="btn_money4" style="width: 115px; float: right; height: 32px; margin-top: 10px; border: 2px solid #018fde; border-radius: 12px; font-size: 15px; color: #ffcc00; background-color: #033b78">5000</button>
+                        <button id="btn_money5" style="width: 115px; float: left; height: 32px; margin-top: 10px; border: 2px solid #018fde; border-radius: 12px; font-size: 15px; color: #ffcc00; background-color: #033b78">10000</button>
+                        <button id="Button1" style="width: 115px; visibility: hidden; float: right; height: 32px; margin-top: 10px; border: 2px solid #018fde; border-radius: 12px; font-size: 15px; color: #ffcc00; background-color: #033b78">5000</button>
+
+                        <button id="btn_all" style="width: 115px; height: 32px; border: 2px solid #018fde; font-size: 16px; margin-top: 10px; border-radius: 12px; color: white; background-color: #09162f">全部轉入</button>
+                        <button id="btn_transferout" style="width: 115px; float: right; height: 32px; border: 2px solid #018fde; border-radius: 12px; color: white; font-size: 16px; margin-top: 10px; background-color: #09162f">全部轉出</button>
+
+                        <button id="btn_confirm" style="width: 115px; height: 32px; border: 2px solid #018fde; font-size: 16px; border-radius: 12px; margin-top: 10px; color: white; background-color: #09162f">確認轉帳</button>
+                        
+                        <a href="#" class="btnModalOpenGame" style="width: 115px; float: right; height: 32px; border: 2px solid #018fde; font-size: 16px; border-radius: 12px; margin-top: 10px; color: white; line-height: 25px; background-color: #b98c29; display: flex; justify-content: center; align-items: center;">
+                            直接進入
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal Message -->
+    <div id="modalMessage" style="display: none;">
+        <div class="iziModal-header iziModal-noSubtitle" style="background: rgb(136, 160, 185); padding-right: 40px;">
+            <h2 class="iziModal-header-title">意見反饋</h2>
+            <p class="iziModal-header-subtitle"></p>
+            <div class="iziModal-header-buttons">
+                <a href="javascript:void(0)" class="iziModal-button iziModal-button-close" data-izimodal-close=""></a>
+            </div>
+        </div>
+        <div class="iziModal-wrap" style="height: 250px;">
+            <div class="iziModal-content" style="padding: 0px;">
+                <div class="mymodalcontent" style="color: black; font-size: 15px;">
+                    <div style="width: 90%; height: 350px; margin: 0 auto;">
+                        <div style="width: 30%; float: left;">
+                            <div class="title_size"></div>
+                            <div class="title_size">客服服務</div>
+                            <div class="title_size">提款速度</div>
+                            <div class="title_size">操作界面</div>
+                            <div class="title_size">網路連結速度</div>
+                            <div class="title_size">意見</div>
+
+                        </div>
+                        <div style="width: 70%; float: left;">
+                            <div style="float: left; width: 100%; height: 35px; line-height: 35px;">
+                                <span id="Span21" class="subtitle_size" style="font-size: 15px !important;">很差</span>
+                                <span id="Span22" class="subtitle_size" style="font-size: 15px !important;">差</span>
+                                <span id="Span23" class="subtitle_size" style="font-size: 15px !important;">普通</span>
+                                <span id="Span24" class="subtitle_size" style="font-size: 15px !important;">好</span>
+                                <span id="Span25" class="subtitle_size" style="font-size: 15px !important;">很好</span>
+                            </div>
+                            <div id="sug1" style="float: left; width: 100%; height: 35px; line-height: 35px;">
+                                <span id="Span1" data-gid="1" class="star_size fa fa-star s1"></span>
+                                <span id="Span2" data-gid="2" class="star_size fa fa-star s1"></span>
+                                <span id="Span3" data-gid="3" class="star_size fa fa-star s1"></span>
+                                <span id="Span4" data-gid="4" class="star_size fa fa-star s1"></span>
+                                <span id="Span5" data-gid="5" class="star_size fa fa-star s1"></span>
+                            </div>
+                            <div id="sug2" style="float: left; width: 100%; height: 35px; line-height: 35px;">
+                                <span id="Span6" data-gid="1" class="star_size fa fa-star s2"></span>
+                                <span id="Span7" data-gid="2" class="star_size fa fa-star s2"></span>
+                                <span id="Span8" data-gid="3" class="star_size fa fa-star s2"></span>
+                                <span id="Span9" data-gid="4" class="star_size fa fa-star s2"></span>
+                                <span id="Span10" data-gid="5" class="star_size fa fa-star s2"></span>
+                            </div>
+                            <div id="sug3" style="float: left; width: 100%; height: 35px; line-height: 35px;">
+                                <span id="Span11" data-gid="1" class="star_size fa fa-star s3"></span>
+                                <span id="Span12" data-gid="2" class="star_size fa fa-star s3"></span>
+                                <span id="Span13" data-gid="3" class="star_size fa fa-star s3"></span>
+                                <span id="Span14" data-gid="4" class="star_size fa fa-star s3"></span>
+                                <span id="Span15" data-gid="5" class="star_size fa fa-star s3"></span>
+                            </div>
+                            <div id="sug4" style="float: left; width: 100%; height: 35px; line-height: 35px;">
+                                <span id="Span16" data-gid="1" class="star_size fa fa-star s4"></span>
+                                <span id="Span17" data-gid="2" class="star_size fa fa-star s4"></span>
+                                <span id="Span18" data-gid="3" class="star_size fa fa-star s4"></span>
+                                <span id="Span19" data-gid="4" class="star_size fa fa-star s4"></span>
+                                <span id="Span20" data-gid="5" class="star_size fa fa-star s4"></span>
+                            </div>
+                            <div id="Div6" style="float: left; width: 100%; color: black; margin-top: 10px; margin-left: 1%;">
+                                <textarea id="myTextarea" rows="4" cols="28" style="width: 100%;"></textarea>
+                            </div>
+                        </div>
+                        <div style="float: right; padding-top: 2vh;">
+                            <button id="Button2" type="button" class="submitreqzxc starcolorBtn">提交</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="btnPopupOpener" style="display: none"></button>
+
+</body>
+
+</html>
+
+
+<script>
+
+    $(document).ready(function () {
+
+        var hostname = window.location.hostname;
+        if (hostname.indexOf('567xx.net') > -1) {
+            $('.contacts').each(function () {
+                var text = $(this).text();
+                $(this).text(text.replace('@999xc', '555xx'));
+            });
+            $('.cws').each(function () {
+                var text = $(this).text();
+                $(this).text(text.replace('love999xc', '555xx'));
+            });
+            $('.dlboxtable01 .lineqr').hide();
+            $('head').append('<meta name="robots" content="index, nofollow" />');
+        }
+
+        if (hostname.indexOf('123xc.net') > -1) {
+            $("#hidblog1").css("display", "none");
+            $("#hidblog2").css("display", "none");
+
+            $("#hidblog4").css("display", "none");
+
+        }
+
+
+        //$('button[target*=Modal]').text('详情');
+
+        $('#modal-contactus').iziModal();
+        $('#modal-profile').iziModal();
+        $('#modal-maintenance').iziModal();
+        $('#modalAnnouncement').iziModal();
+
+        $('#modalMessage').iziModal();
+
+
+        $('#test').click(function () {
+            var width = $(window).width() * 0.9;
+            var html = $('.contactus_content').html();
+            $('#modal-contactus').iziModal('setTop', 100);
+            $('#modal-contactus').iziModal('setBottom', 20);
+            $('#modal-contactus').iziModal('setWidth', width);
+            $('#modal-contactus').iziModal('setTitle', '聯系我們');
+                $('#modal-contactus').iziModal('setIcon', "fa fa-phone");
+
+
+                $('#modal-contactus').iziModal('open', {
+                    closeButton: false,
+                    iconColor: "black",
+                    transitionIn: "fadeInRight",
+                });
+                $('#modal-contactus').iziModal('setContent', html);
+                $('.iziModal-overlay').css("background-color", "rgb(136, 160, 185);");
+                $('.iziModal-header').css('background-image', 'linear-gradient(to top, rgb(92, 177, 210), rgb(19, 86, 187)) ');
+            });
+
+        $('#test_2').click(function () {
+            var width = $(window).width() * 0.9;
+            var html = $('.contactus_content').html();
+            $('#modal-contactus').iziModal('setTop', 100);
+            $('#modal-contactus').iziModal('setBottom', 20);
+            $('#modal-contactus').iziModal('setWidth', width);
+            $('#modal-contactus').iziModal('setTitle', '聯系我們');
+                $('#modal-contactus').iziModal('setIcon', "fa fa-phone");
+
+
+                $('#modal-contactus').iziModal('open', {
+                    closeButton: false,
+                    iconColor: "black",
+                    transitionIn: "fadeInRight",
+                });
+                $('#modal-contactus').iziModal('setContent', html);
+                $('.iziModal-overlay').css("background-color", "rgb(136, 160, 185);");
+                $('.iziModal-header').css('background-image', 'linear-gradient(to top, rgb(92, 177, 210), rgb(19, 86, 187)) ');
+            });
+
+
+        $('#profile').click(function () {
+            var width = $(window).width() * 0.9;
+            var html = $('.profile_content').html();
+            $('#modal-profile').iziModal('setTop', 100);
+            $('#modal-profile').iziModal('setBottom', 20);
+            $('#modal-profile').iziModal('setWidth', width);
+            $('#modal-profile').iziModal('setTitle', '會員中心');
+            $('#modal-profile').iziModal('setIcon', "fa fa-user");
+
+
+            $('#modal-profile').iziModal('open', {
+                closeButton: false,
+                iconColor: "black",
+                transitionIn: "fadeInRight",
+            });
+            $('#modal-profile').iziModal('setContent', html);
+            $('.iziModal-overlay').css("background-color", "rgb(136, 160, 185);");
+            $('.iziModal-header').css('background-image', 'linear-gradient(to top, rgb(92, 177, 210), rgb(19, 86, 187)) ');
+        });
+
+
+        $('#mMaintenance').click(function () {
+            var width = $(window).width() * 0.9;
+            var maintenance_replaced = $('.maintenance_content').html().replace(/OB Sport/gi, '任你博體育');
+            $('.maintenance_content').html(maintenance_replaced);
+            var html = $('.maintenance_content').html();
+            $('#modal-maintenance').iziModal('setTop', 100);
+            $('#modal-maintenance').iziModal('setBottom', 20);
+            $('#modal-maintenance').iziModal('setWidth', width);
+            $('#modal-maintenance').iziModal('setTitle', '任你博公告');
+            //$('#modal-maintenance').iziModal('setIcon', "fa fa-user");
+
+
+            $('#modal-maintenance').iziModal('open', {
+                closeButton: false,
+                iconColor: "black",
+                transitionIn: "fadeInRight",
+            });
+            $('#modal-maintenance').iziModal('setContent', html);
+            $('.iziModal-overlay').css("background-color", "rgb(136, 160, 185);");
+            $('.iziModal-header').css('background-image', 'linear-gradient(to top, rgb(92, 177, 210), rgb(19, 86, 187)) ');
+        });
+
+
+
+        $('#div_test').click(function () {
+            //alert('123');
+            var maxWidth = 650;
+            var screenWidth = $(window).width();
+            if (screenWidth > maxWidth)
+                screenWidth = screenWidth * 0.6;
+            else
+                screenWidth = screenWidth * 0.8;
+            //var width = $(window).width() * 0.5;
+            //toggle_visibility($(this));
+            var target = $(this).attr('target');
+            var html = $('#' + target).html();
+            $('#modalAnnouncement').iziModal('setTop', 150);
+            $('#modalAnnouncement').iziModal('setBottom', 5);
+            $('#modalAnnouncement').iziModal('setWidth', screenWidth);
+            $('#modalAnnouncement').iziModal('setOverlayClose', false);
+            $('#modalAnnouncement').iziModal('open', {
+                overlayColor: "black",
+                transitionIn: "bounceInDown",
+            });
+            $('#modalAnnouncement').iziModal('setContent', html);
+            $('.iziModal-overlay').css("background-color", "rgb(136, 160, 185);");
+            $('.iziModal-header').css('background-image', 'linear-gradient(to top, rgb(92, 177, 210), rgb(19, 86, 187)) ');
+        });
+
+        $('#sendMsg').click(function () {
+            var width = $(window).width() * 0.96;
+            var top = $(window).height() * 0.1;
+            var html = $('#modal-blog .mymodalcontent').html();
+            $('#modalMessage').iziModal('setTop', top);
+            $('#modalMessage').iziModal('setBottom', 5);
+            $('#modalMessage').iziModal('setWidth', width);
+            $('#modalMessage').iziModal('setOverlayClose', false);
+            $('#modalMessage').iziModal('open', {
+                overlayColor: "black",
+                transitionIn: "bounceInDown",
+            });
+            $('#modalMessage').iziModal('setContent', html);
+            $('.iziModal-overlay').css("background-color", "rgba(212, 212, 212, 0.5)");
+
+            $('#myTextarea').blur();
+
+            $(".s1").click(function () {
+                var gid = $(this).data('gid');
+                //alert(gid);
+
+                $('.s1[data-gid=' + gid + ']').each(function () {
+                    $(this).addClass("schecked");
+                });
+                $('.s1:not([data-gid=' + gid + '])').each(function () {
+                    $(this).removeClass("schecked");
+                });
+            });
+
+            $(".s2").click(function () {
+                var gid = $(this).data('gid');
+                //alert(gid);
+
+                $('.s2[data-gid=' + gid + ']').each(function () {
+                    $(this).addClass("schecked");
+                });
+                $('.s2:not([data-gid=' + gid + '])').each(function () {
+                    $(this).removeClass("schecked");
+                });
+            });
+
+            $(".s3").click(function () {
+                var gid = $(this).data('gid');
+                //alert(gid);
+
+                $('.s3[data-gid=' + gid + ']').each(function () {
+                    $(this).addClass("schecked");
+                });
+                $('.s3:not([data-gid=' + gid + '])').each(function () {
+                    $(this).removeClass("schecked");
+                });
+            });
+
+            $(".s4").click(function () {
+                var gid = $(this).data('gid');
+                //alert(gid);
+
+                $('.s4[data-gid=' + gid + ']').each(function () {
+                    $(this).addClass("schecked");
+                });
+                $('.s4:not([data-gid=' + gid + '])').each(function () {
+                    $(this).removeClass("schecked");
+                });
+            });
+
+            $('.submitreqzxc').click(function () {
+                //$('#login-btn').prop('disabled', true);
+                showLoading();
+
+                if ($('#sug1').find('.schecked').length == "") {
+                    alert("請選完評價.");
+                    closeLoading();
+                    return;
+                }
+
+                if ($('#sug2').find('.schecked').length == "") {
+                    alert("請選完評價.");
+                    closeLoading();
+                    return;
+                }
+
+                if ($('#sug3').find('.schecked').length == "") {
+                    alert("請選完評價.");
+                    closeLoading();
+                    return;
+                }
+
+                if ($('#sug4').find('.schecked').length == "") {
+                    alert("請選完評價.");
+                    closeLoading();
+                    return;
+                }
+
+                var Star1 = $('#sug1').find('.schecked').data('gid');
+                var Star2 = $('#sug2').find('.schecked').data('gid');
+                var Star3 = $('#sug3').find('.schecked').data('gid');
+                var Star4 = $('#sug4').find('.schecked').data('gid');
+                var Txt_comment = $('#myTextarea').val();
+
+                var paramSuggestion = {
+                    star1: Star1,
+                    star2: Star2,
+                    star3: Star3,
+                    star4: Star4,
+                    txt_comment: Txt_comment,
+                }
+                //console.log("ajax");
+                $.ajax({
+                    url: "mLogin.html/SubmitFeedback",
+                    type: 'POST',
+                    //async: false,
+                    data: JSON.stringify(paramSuggestion),
+                    //data: param,
+                    contentType: "application/json",
+                    dataType: 'JSON',
+                    success: function (result) {
+                        //alert(result.d);
+                        if (result.d) {
+                            //console.log(result.d);
+                            var o = JSON.parse(result.d);
+                            var msg = o.msg;
+                            if (o.code == "0") {
+                                closeLoading();
+                                alert('提交成功');
+                            }
+                            else {
+                                alert('提交失敗');
+                            }
+                        }
+                    },
+                    error: function (xhr) {
+                        //alert("error");
+                    }
+                });
+            });
+
+        });
+
+    });
+
+
+
+</script>
+
+    <style>
+    #modalMessage{
+        background: linear-gradient(to top, #38c9ff 0%, #99b4e8 100%) !important;
+        height: 380px !important;
+    }
+
+    #modalMessage .iziModal-header {
+        background: linear-gradient(to top, rgb(92, 177, 210), rgb(19, 86, 187)) rgb(136, 160, 185) !important;
+    }
+
+    .title_size{
+        width:100%;height:35px;line-height:35px;text-align:left;font-size: 0.9em;
+    }
+    .subtitle_size{
+        margin-top:8px;width: 20%;float:left;text-align:center;
+    }
+    .star_size{
+        margin-top:8px;width: 20%;float:left;text-align:center
+    }
+
+    .starcolorBtn {
+        background: linear-gradient(#ffe162 0%, #d09b3d 100%);
+        border-radius: 3px;
+        border: none;
+        width: 100px;
+        height: 24px;
+        line-height: 23px;
+        font-weight: bold;
+        color: black;
+    }
+
+    #modalAnnouncement {
+        background: #003366 !important;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    #modalAnnouncement .mymodalcontent{
+        padding:10px;
+    }
+
+    #modal-blog {
+        background: #003366 !important;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    #modal-blog .mymodalcontent{
+        padding:10px;
+    }
+
+    #modal-contactus {
+        background-image: linear-gradient(to top, #38c9ff 0%, #1a4b7f 50%, #0b2351 100%) !important;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    #modal-contactus table{
+        background-color:transparent !important;
+    }
+
+    #modal-maintenance {
+        background: #003366 !important;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    #modal-maintenance table{
+        background-color:transparent !important;
+    }
+
+
+    #modal-profile {
+        background-image: linear-gradient(to top, #38c9ff 0%, #1a4b7f 50%, #0b2351 100%) !important;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    }
+
+     #modal-profile table{
+        background-color:transparent !important;
+    }
+
+
+    .iziModal-header {
+        text-align: left !important;
+        margin: auto !important;
+    }
+
+    .iziModal-header-title {
+        display: inline !important;
+        float: none !important;
+        color: #000 !important;
+        /*text-align: center !important;*/
+        font-weight: 800 !important;
+    }
+
+    .iziModal-header-icon {
+        display: inline !important;
+        float: none !important;
+        color: #000 !important;
+    }
+
+        .div_blog_header {
+            position: fixed;
+            height: calc(64px + 64px + 30px);
+            z-index: 10;
+        }
+</style>
+
+<script>
+    var PLAYER_SESSION;
+
+    function ClosePopup() {
+        window.PLAYER_SESSION = 0;
+        window.location.href = "Logout.html";
+    }
+
+    var option_casino = ['popup_windowcasino', 'width=800,height=600,left=300,top=300,resizable=yes'];
+    var option_slot = ['popup_windowslot', 'width=800,height=600,left=300,top=300,resizable=yes'];
+
+    AssignModalOpenGameHref = function (targetPage, gameId, siteId, option) {
+        if (gameId <= 0) {
+            $('#modal .btnModalOpenGame').click(function() {
+                alert("請登錄後打開遊戲！");
+            });
+        } else {
+            var url = "/" + targetPage + "?GID=" + gameId + "&SID=" + siteId;
+            //$('#modal .btnModalOpenGame').prop('href', url).prop('target', '_blank');
+            $('#modal .btnModalOpenGame')
+                .attr('href', url)
+                //.attr('onclick', 'window.open("' + url + '","' + option[0] + '","' + option[1] + '");return false;');
+                .attr('target', '_blank');
+        }
+    }
+   
+</script>

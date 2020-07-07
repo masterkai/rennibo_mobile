@@ -1,0 +1,451 @@
+
+
+<!doctype html>
+<html class="no-js" lang="zh-TW">
+<head>
+    <title></title>
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#38373d" />
+    <meta name="google" content="notranslate">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="Assets/css/loading.css">
+    <link rel="stylesheet" href="assets/css2/iziModal.css?v=1.2">
+    <link rel="stylesheet" href="assets/css2/font-awesome.css">
+    <script src="Assets/js/loading.js"></script>
+    <script type="text/javascript" src="assets/js2/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="assets/js2/iziModal.js"></script>
+    <script>
+        if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+            var msViewportStyle = document.createElement("style");
+            msViewportStyle.appendChild(
+                document.createTextNode(
+                    "@-ms-viewport{width:auto!important}"
+                )
+            );
+            document.getElementsByTagName("head")[0].
+                appendChild(msViewportStyle);
+        }
+
+        function showLoading() {
+            var option = { color: "#E2CF32", background: "rgba(250,247,218,.2)", timeout: 0, scale: 0 };
+            H5_loading.show(option);
+        }
+        function closeLoading() {
+            var option = { timeout: 0 };
+            H5_loading.hide(option);
+        }
+
+        function redirectline() {
+            var url = "https://line.me/R/ti/p/%40999xc";
+            window.open(url, 'popup_window', '_blank');
+        }
+
+        $(document).ready(function () {
+            BindEventsC();
+            var prm = Sys.WebForms.PageRequestManager.getInstance();
+            prm.add_endRequest(function () {
+                BindEventsC();
+            });
+        });
+
+        function BindEventsC() {
+            var hostname = window.location.hostname;
+            if (hostname.indexOf('567xx.net') > -1) {
+                $('.contacts').each(function () {
+                    var text = $(this).text();
+                    $(this).text(text.replace('@999xc', '555xx'));
+                });
+                $('.cws').each(function () {
+                    var text = $(this).text();
+                    $(this).text(text.replace('love999xc', '555xx'));
+                });
+                $('.dlboxtable01 .lineqr').hide();
+            }
+
+            $('#modal-contactus').iziModal();
+
+            $('#btn_contactUS').click(function () {
+                var width = $(window).width() * 0.9;
+                var html = $('.contactus_content').html();
+                $('#modal-contactus').iziModal('setTop', 100);
+                $('#modal-contactus').iziModal('setBottom', 20);
+                $('#modal-contactus').iziModal('setWidth', width);
+                $('#modal-contactus').iziModal('setTitle', '聯系我們');
+                 $('#modal-contactus').iziModal('setIcon', "fa fa-phone");
+
+
+                 $('#modal-contactus').iziModal('open', {
+                     closeButton: false,
+                     iconColor: "black",
+                     transitionIn: "fadeInRight",
+                 });
+                 $('#modal-contactus').iziModal('setContent', html);
+                 $('.iziModal-overlay').css("background-color", "rgb(136, 160, 185);");
+                 $('.iziModal-header').css('background-image', 'linear-gradient(to top, rgb(92, 177, 210), rgb(19, 86, 187)) ');
+            });
+
+            $('#btn_contactUS2').click(function () {
+                var width = $(window).width() * 0.9;
+                var html = $('.contactus_content').html();
+                $('#modal-contactus').iziModal('setTop', 100);
+                $('#modal-contactus').iziModal('setBottom', 20);
+                $('#modal-contactus').iziModal('setWidth', width);
+                $('#modal-contactus').iziModal('setTitle', '聯系我們');
+                 $('#modal-contactus').iziModal('setIcon', "fa fa-phone");
+
+
+                 $('#modal-contactus').iziModal('open', {
+                     closeButton: false,
+                     iconColor: "black",
+                     transitionIn: "fadeInRight",
+                 });
+                 $('#modal-contactus').iziModal('setContent', html);
+                 $('.iziModal-overlay').css("background-color", "rgb(136, 160, 185);");
+                 $('.iziModal-header').css('background-image', 'linear-gradient(to top, rgb(92, 177, 210), rgb(19, 86, 187)) ');
+             });
+        }
+
+
+        
+
+
+        
+
+    </script>
+
+    <style>
+        body {
+            font-family: Microsoft YaHei !important;
+        }
+
+        /* Layout */
+        @-webkit-viewport {
+            width: device-width;
+        }
+
+        @-moz-viewport {
+            width: device-width;
+        }
+
+        @-ms-viewport {
+            width: device-width;
+        }
+
+        @-o-viewport {
+            width: device-width;
+        }
+
+        @viewport {
+            width: device-width;
+        }
+
+        input {
+            font-size: 16px;
+            width: 100%;
+            color:black;
+        }
+    </style>
+
+    <link href="assets/favicon-32x32.png?v=1.2" rel="shortcut icon" />
+
+    <link type="text/css" href="assets/css2/general.css?v=20200525a" rel="stylesheet" />
+
+    <style>
+        .boxsize {
+            width: 200px;
+        }
+
+        .colorBtn {
+            background: linear-gradient(#ffe162 0%, #d09b3d 100%);
+            border-radius: 3px;
+            border: none;
+            width: 50px;
+            height: 24px;
+            line-height: 23px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body style="background: #000000 url(Assets/img/imgBG.jpg)no-repeat center center; background-size: cover;">
+   <div class="row padding border-bottom" style="color:#fff04b;text-align:center;">
+        <div style="position:absolute">
+            <a href="index.html">
+                <img src="assets/img/imgBtnBack2.png" style="margin-top:8px;" class="imgMenu"></a>
+        </div>
+       <img src="Assets/img/icon/movMember0001.png" height="35" style="margin-top:3px;" />
+    </div>
+    <div style="position: inherit; overflow-y: auto;">
+        <form method="post" action="./muserProfile.html" id="regForm" class="form form-horizontal">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="LeI6I88c3o1GA2lR3RgW8HKUDGo1sy6/fzukFcnKCI+Z4bG+4cLCObqB9eZOGbofUTHDy1UlA+N/UVAtfjVI7Lg0sYCZ6h+qC2fwbdmiLeXJAh1aWrR4ENcn88oxVxJvyL/pMmJKf2feryGKvr1D54aZjRrIwa1fXsI5fmF84nvcmp3hasnxfZBYyMUyGk7ka89dagw0tnPQus5jh9BR7Hrxgf+BoSEupkCNHiDu728=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['regForm'];
+if (!theForm) {
+    theForm = document.regForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZCytzjO8pb5Fb-mFdu7qv3idZcGAhNp-rJH1kpN9k8YSZ2qWZWzzfPL6g2ECcwjT1Q2&amp;t=636284082552661246" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=D9drwtSJ4hBA6O8UhT6CQtaS5y0Cmd3E3GMELsIpD6tg61IxaUGT6FqAbVgq86kUT0NOTl2TQbSopexOTCJSpACmxnDyXL9PSB0MpTZyZc3usE1bbcOBDFwO14mPqXt_8V41BpK4mpeUveNX2suLWZT11cSkjMCFzMs3iG-BF581&amp;t=ffffffffcce8aaf2" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=JnUc-DEDOM5KzzVKtsL1tdiFsqbqvlAR6gWDxwXcluqFcMJeol585nUMCqUJVDCOm-NUrDQ1RtxxJkYzdlhNpprsbW-g7yYPy4q-C_WMNymFXYbEawNUmE3-1WduoCUSQpl_GPKMSzlrRBKw535uSk0jI5cW_Q-IHTmqz0nnNafYZwYXVOyEE2TEzHHPCanx0&amp;t=ffffffffcce8aaf2" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="4382099B" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="e5njpCsPbCjcT75GprdB1V1BIACmNMUr8NV2zbq8ggvO0S3i8t0IV26I9i9xaHY3paxpOLeiO3a9BYpk19c/BGfwiSFvYn4E0Grs4J8pThqcDi7YzEB3q3h+2Ck/e1KFuox66KlsmVvXYBJlEF6dtW0AerJgsF38cCupAjpxzSG2d0la50CEmaWciqPfxorVFgw+T837akvMV4DYRPOzDB82pVqdHzabT1TM5CJLPRv1WgoNWQWEd0TtbGK6Dswm" />
+</div>
+            <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ScriptManager1', 'regForm', ['tUpdatePanel1','UpdatePanel1'], [], [], 90, '');
+//]]>
+</script>
+
+            <div id="UpdatePanel1">
+	
+                    <div class="row paddingLeft paddingRight paddingBottom">
+                        <div class="col-3 normal-text paddingTop15">用戶名</div>
+                        <div class="col-1 normal-text align-right paddingTop15">:&nbsp;</div>
+                        <div class="col-8 paddingTop">
+                            <input name="uname" type="text" id="uname" disabled="disabled" class="form-control" value="sup0001" />
+                        </div>
+                    </div>
+                    <div class="row paddingLeft paddingRight paddingBottom">
+                        <div class="col-3 normal-text paddingTop15">手機號碼</div>
+                        <div class="col-1 normal-text align-right paddingTop15">:&nbsp;</div>
+                        <div class="col-8 paddingTop">
+                            <input name="contact" type="text" id="contact" disabled="disabled" class="form-control" value="12313133122" />
+                        </div>
+                    </div>
+
+                    <div class="row paddingLeft paddingRight paddingBottom">
+                        <div class="col-3 normal-text paddingTop15">LINE ID</div>
+                        <div class="col-1 normal-text align-right paddingTop15">:&nbsp;</div>
+                        <div class="col-8 paddingTop">
+                            <input name="line" type="text" id="line" disabled="disabled" class="form-control" value="sup0001" />
+                        </div>
+                    </div>
+
+                    <div class="row paddingLeft paddingRight paddingBottom">
+                        <div class="col-3 normal-text paddingTop15">銀行帳號</div>
+                        <div class="col-1 normal-text align-right paddingTop15">:&nbsp;</div>
+                        <div class="col-8 paddingTop" style="font-size: 14px;">
+                            修改請洽客服
+                            <button type="button" id="btn_contactUS" class="colorBtn">前往</button>
+                        </div>
+                    </div>
+
+                    <div style="border: 1px solid #5c7094;"></div>
+
+                    <div class="row paddingLeft paddingRight paddingBottom">
+                        <div class="col-3 normal-text paddingTop15">交易記錄</div>
+                        <div class="col-1 normal-text align-right paddingTop15">:&nbsp;</div>
+
+                        <div class="col-8 paddingTop">
+                            <a href="mhistory.html">
+                                <button type="button" class="colorBtn">前往</button></a>
+                        </div>
+                    </div>
+
+                    <div class="row paddingLeft paddingRight paddingBottom">
+                        <div class="col-3 normal-text paddingTop15">投注記錄</div>
+                        <div class="col-1 normal-text align-right paddingTop15">:&nbsp;</div>
+
+                        <div class="col-8 paddingTop">
+                            <a href="mbethistory.html">
+                                <button type="button" class="colorBtn">前往</button></a>
+                        </div>
+
+                    </div>
+
+                    <div style="border: 1px solid #5c7094;"></div>
+
+                    <div class="align-center" style="padding-top: 5px; font-weight: bold; font-size: 16px; color: #fff04b">更改密碼</div>
+
+                    <div class="row paddingLeft paddingRight paddingBottom">
+                        <div class="col-3 normal-text paddingTop15">原</div>
+                        <div class="col-1 normal-text align-right paddingTop15">:&nbsp;</div>
+                        <div class="col-8 paddingTop">
+                            <input name="txtChangePassword_CurrentPassword" type="password" id="txtChangePassword_CurrentPassword" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="row paddingLeft paddingRight paddingBottom">
+                        <div class="col-3 normal-text paddingTop15">新</div>
+                        <div class="col-1 normal-text align-right paddingTop15">:&nbsp;</div>
+                        <div class="col-8 paddingTop">
+                            <input name="txtChangePassword_NewPassword" type="password" id="txtChangePassword_NewPassword" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="row paddingLeft paddingRight paddingBottom">
+                        <div class="col-3 normal-text paddingTop15">確認</div>
+                        <div class="col-1 normal-text align-right paddingTop15">:&nbsp;</div>
+                        <div class="col-8 paddingTop">
+                            <input name="txtChangePassword_ConfirmPassword" type="password" id="txtChangePassword_ConfirmPassword" class="form-control" />
+                        </div>
+                    </div>
+
+                    
+</div>
+
+                    <div class="row paddingLeft paddingRight paddingBottom">
+                        <div class="col-3 normal-text paddingTop15"></div>
+                        <div class="col-1 normal-text align-right paddingTop15"></div>
+                        <div class="col-8 paddingTop">
+                            <a id="btnChangePassword" style="width: 85px;" onclick="showLoading();" class="form-btn submitreq" href="javascript:__doPostBack(&#39;btnChangePassword&#39;,&#39;&#39;)">重置密碼</a>
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+                   
+
+                
+        </form>
+    </div>
+
+    <div class="overlay"><span id="loading-txt">請稍等...</span></div>
+
+    <div id="modal-contactus" class="contactus"></div>
+
+    <div class="contactus_content" style="display: none">
+        <table style="width: 100%" id="Table1">
+            <tbody>
+                <tr>
+                    <td class="dlicon" style="" align="center" valign="middle"></td>
+                </tr>
+                <tr>
+                    <td class="dlicon01" style="border-bottom: 1.4px solid black;" align="center" valign="middle">
+                        <table class="dlboxtable01" border="0" style="width: 200px; height: 54px;" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr style="border-bottom: 0px solid white;">
+                                    <td>
+                                        <div style="float: left">
+                                            <img src="Assets/img/call.png" style="width: 45px">
+                                        </div>
+
+                                        <div style="float: left; width: 110px; margin-left: 20px; color: white; font-weight: 400; line-height: 25px; font-size: 15px">
+                                            24X7
+                                                            <br />
+                                            在線客服
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td onclick="redirectline()" class="dlicon01" style="border-bottom: 1.4px solid black;" align="center" valign="middle">
+                        <table class="dlboxtable01" border="0" style="width: 200px; height: 50px;" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr style="border-bottom: 0px solid white;">
+                                    <td>
+                                        <div class="lineqr" style="width: 100%; height: 100px; text-align: center; padding-top: 5px; padding-bottom: 5px;">
+                                            <img src="Assets/img/rnbqr.png" style="height: 100px;">
+                                        </div>
+                                        <div style="height: 10px;"></div>
+                                        <div style="float: left">
+                                            <img src="Assets/img/line.png" style="width: 40px">
+                                        </div>
+                                        <a href="https://line.me/R/ti/p/%40999xc" target="_blank">
+                                            <div class="contacts" style="float: left; margin-left: 20px; width: 100px; color: white; font-weight: 400; line-height: 40px; font-size: 15px">@999xc </div>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <td class="dlicon01" style="border-bottom: 1.4px solid black;" align="center" valign="middle">
+                    <table class="dlboxtable01" border="0" style="width: 200px; height: 50px;" cellspacing="0" cellpadding="0">
+                        <tbody>
+                            <tr style="border-bottom: 0px solid white;">
+                                <td>
+                                    <div style="float: left">
+                                        <img src="Assets/img/wechat.png" style="width: 40px">
+                                    </div>
+                                    <div class="contacts cws" style="float: left; margin-left: 20px; width: 100px; color: white; font-weight: 400; line-height: 40px; font-size: 15px">love999xc </div>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <tr>
+                </tr>
+
+                <tr>
+                    <td class="dlicon01" align="center" valign="middle">
+                        <table class="dlboxtable01" border="0" style="width: 200px; height: 50px;" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr style="border-bottom: 0px solid white;">
+                                    <td>
+                                        <div style="float: left">
+                                            <img src="Assets/img/message.png?=1.2" style="width: 40px">
+                                        </div>
+                                        <div class="contacts" style="float: left; margin-left: 20px; width: 100px; color: white; font-weight: 400; line-height: 40px; font-size: 15px">
+                                            客訴信箱
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <style>
+        #modal-contactus {
+            background-image: linear-gradient(to top, #38c9ff 0%, #1a4b7f 50%, #0b2351 100%) !important;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        #modal-contactus table {
+            background-color: transparent !important;
+        }
+
+        .iziModal-header-icon {
+            display: inline !important;
+            float: none !important;
+            color: #000 !important;
+        }
+
+        .iziModal-header-title {
+            display: inline !important;
+            float: none !important;
+            color: #000 !important;
+        }
+    </style>
+
+</body>
+</html>

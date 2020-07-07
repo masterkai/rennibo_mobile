@@ -1,0 +1,374 @@
+/*begin side manu*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  background-color: #f4f4f4;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 15px 0px 15px 80px;
+  text-decoration: none;
+  font-size: 17px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  font-family:Microsoft YaHei !important;
+}
+/*
+.sidenav a:hover {
+  color: #000000;
+  background: #e3e3e3;
+}
+*/
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 200px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.sidemanu-logo {
+	width: 60%;
+    float: right;
+    position: absolute;
+    top: 0px;
+    right: 30px;
+}
+.close-button {
+	padding: 3px 0px 8px 32px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-icon00 {
+	background: url(../../Assets/img/sidemanu/movBtnHome0000.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+}
+.side-icon00:hover {
+	background: #e3e3e3 url(../../Assets/img/sidemanu/movBtnHome0001.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+	color:#000;
+}
+
+.side-icon01 {
+	background: url(../../Assets/img/sidemanu/movBtnUser0000.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+}
+.side-icon01:hover {
+	background: #e3e3e3 url(../../Assets/img/sidemanu/movBtnUser0001.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+	color:#000;
+}
+.side-icon02 {
+	background: url(../../Assets/img/sidemanu/movBtnTransfer0000.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+}
+.side-icon02:hover {
+	background: #e3e3e3 url(../../Assets/img/sidemanu/movBtnTransfer0001.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+	color:#000;
+}
+.side-icon03 {
+	background: url(../../Assets/img/sidemanu/movBtnWithdrawal0000.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+}
+.side-icon03:hover {
+	background: #e3e3e3 url(../../Assets/img/sidemanu/movBtnWithdrawal0001.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+	color:#000;
+}
+.side-icon04 {
+	background: url(../../Assets/img/sidemanu/movBtnDeposit0000.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+}
+.side-icon04:hover {
+	background: #e3e3e3 url(../../Assets/img/sidemanu/movBtnDeposit0001.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+	color:#000;
+}
+.side-icon05 {
+	background: url(../../Assets/img/sidemanu/movBtnTag0000.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+}
+.side-icon05:hover {
+	background: #e3e3e3 url(../../Assets/img/sidemanu/movBtnTag0001.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+	color:#000;
+}
+.side-icon06 {
+	background: url(../../Assets/img/sidemanu/movBtnFaq0000.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+}
+.side-icon06:hover {
+	background: #e3e3e3 url(../../Assets/img/sidemanu/movBtnFaq0001.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+	color:#000;
+}
+.side-icon07 {
+	background: url(../../Assets/img/sidemanu/movBtnLoudspeaker0000.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+}
+.side-icon07:hover {
+	background: #e3e3e3 url(../../Assets/img/sidemanu/movBtnLoudspeaker0001.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+	color:#000;
+}
+.side-icon08 {
+	background: url(../../Assets/img/sidemanu/movBtnDownload0000.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+}
+.side-icon08:hover {
+	background: #e3e3e3 url(../../Assets/img/sidemanu/movBtnDownload0001.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+	color:#000;
+}
+.side-icon09 {
+	background: url(../../Assets/img/sidemanu/movBtnReferral0000.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+}
+.side-icon09:hover {
+	background: #e3e3e3 url(../../Assets/img/sidemanu/movBtnReferral0001.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+	color:#000;
+}
+.side-icon10 {
+	background: url(../../Assets/img/sidemanu/movBtnShake0000.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+}
+.side-icon10:hover {
+	background: #e3e3e3 url(../../Assets/img/sidemanu/movBtnShake0001.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+	color:#000;
+}
+.side-icon11 {
+	background: url(../../Assets/img/sidemanu/movBtnLogout0000.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+}
+.side-icon11:hover {
+	background: #e3e3e3 url(../../Assets/img/sidemanu/movBtnLogout0001.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+	color:#000;
+}
+
+.side-icon12 {
+	background: url(../../Assets/img/sidemanu/movBtnBlog0000.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+}
+.side-icon12:hover {
+	background: #e3e3e3 url(../../Assets/img/sidemanu/movBtnBlog0001.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+	color:#000;
+}
+
+.side-icon13 {
+	background: url(../../Assets/img/sidemanu/movBtnAboutUs0000.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+}
+.side-icon13:hover {
+	background: #e3e3e3 url(../../Assets/img/sidemanu/movBtnAboutUs0001.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+	color:#000;
+}
+
+.side-icon_product {
+	background: url(../../Assets/img/sidemanu/product_intro_default.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+}
+.side-icon_product:hover {
+	background: #e3e3e3 url(../../Assets/img/sidemanu/product_intro.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+	color:#000;
+}
+
+.side-icon_baccarat {
+	background: url(../../Assets/img/sidemanu/baccarat_default.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+}
+.side-icon_baccarat:hover {
+	background: #e3e3e3 url(../../Assets/img/sidemanu/baccarat.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+	color:#000;
+}
+
+.side-icon_bingo {
+	background: url(../../Assets/img/sidemanu/bingo_default.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+}
+.side-icon_bingo:hover {
+	background: #e3e3e3 url(../../Assets/img/sidemanu/bingo.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+	color:#000;
+}
+
+.side-icon_fishing {
+	background: url(../../Assets/img/sidemanu/fishing_default.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+}
+.side-icon_fishing:hover {
+	background: #e3e3e3 url(../../Assets/img/sidemanu/fishing.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+	color:#000;
+}
+
+.side-icon_gaming {
+	background: url(../../Assets/img/sidemanu/gaming_default.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+}
+.side-icon_gaming:hover {
+	background: #e3e3e3 url(../../Assets/img/sidemanu/gaming.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+	color:#000;
+}
+
+.side-icon_poker {
+	background: url(../../Assets/img/sidemanu/poker_default.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+}
+.side-icon_poker:hover {
+	background: #e3e3e3 url(../../Assets/img/sidemanu/poker.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+	color:#000;
+}
+
+.side-icon_slot_game {
+	background: url(../../Assets/img/sidemanu/slot_game_default.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+}
+.side-icon_slot_game:hover {
+	background: #e3e3e3 url(../../Assets/img/sidemanu/slot_game.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+	color:#000;
+}
+
+.side-icon_sports_betting {
+	background: url(../../Assets/img/sidemanu/sports_betting_default.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+}
+.side-icon_sports_betting:hover {
+	background: #e3e3e3 url(../../Assets/img/sidemanu/sports_betting.png)no-repeat center center;
+	background-size: 10%;
+    background-position-x: 20px;
+	color:#000;
+}
+
+
+.logout-button {
+	text-align: center;
+    background: linear-gradient(#ffe162 0%,#d09b3d 100%);
+    border: 1px solid #daab45;
+    border-radius: 5px;
+    width: 60px;
+    height: 30px;
+    font-size: 16px;
+    margin: 0 auto;
+    /* float: right; */
+}
+/*end side manu*/
+
+/* jssor slider loading skin spin css */
+.jssorl-009-spin img {
+	animation-name: jssorl-009-spin;
+	animation-duration: 1.6s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes jssorl-009-spin {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+
+.jssorb053 .i {position:absolute;cursor:pointer;}
+.jssorb053 .i .b {fill:#fff;fill-opacity:0.5;}
+.jssorb053 .i:hover .b {fill-opacity:.7;}
+.jssorb053 .iav .b {fill-opacity: 1;}
+.jssorb053 .i.idn {opacity:.3;}
+
+.jssora093 {display:block;position:absolute;cursor:pointer;}
+.jssora093 .c {fill:none;stroke:#fff;stroke-width:400;stroke-miterlimit:10;}
+.jssora093 .a {fill:none;stroke:#fff;stroke-width:400;stroke-miterlimit:10;}
+.jssora093:hover {opacity:.8;}
+.jssora093.jssora093dn {opacity:.6;}
+.jssora093.jssora093ds {opacity:.3;pointer-events:none;}
+
+.bg {
+	background: #000000 url(../../Assets/img/imgBG.jpg)no-repeat center center;
+    background-size: cover;
+    height: auto;
+}
+.bg2 {
+	background: #000000 url(../../Assets/img/imgTop3Bg.jpg)no-repeat center center;
+    background-size: cover;
+    height: auto;
+}
+.bg2-2 {
+	background: #000000 url(../../Assets/img/imgHomepageTop3Table.png)no-repeat center center;
+    background-size: contain;
+    height: 100%;
+}
+.bg3 {
+    background: #000000 url(../../Assets/img/imgTop3Bg.jpg)no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+    /*height: 500px;*/
+}
+/**/
