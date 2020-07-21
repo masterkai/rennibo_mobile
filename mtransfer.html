@@ -144,7 +144,21 @@
             overflow-y: scroll;
         }
 
+        .itemsBox::-webkit-scrollbar {
+            width: 12.34px;
+        }
+        .itemsBox::-webkit-scrollbar-thumb {
+            background-color: #454543;
+            outline: #5f5f5f solid 1px;
+        }
+        .itemsBox::-webkit-scrollbar-track {
+            background-color: #151515;
+        }
+
         .itemGroup {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             width: 100%;
             height: 30px;
             margin-top: 5px;
@@ -805,8 +819,8 @@
                         </div>
                     </div>
                     <div class="itemGroup" id="MainContent_div_dg">
-                        <div style="color: white; float: left">DG百家樂</div>
-                        <div style="color: white; float: right; height: 20px;">
+                        <div style="color: white;">DG百家樂</div>
+                        <div style="color: white;height: 20px;">
                             <div style="float: right; width: 20px; height: 20px;">
                                 <img src="Assets/img/icon_refresh.png" width="20" height="20" class="walletIcon imgsize" alt="" data-val="25">
                             </div>
@@ -814,8 +828,8 @@
                         </div>
                     </div>
                     <div class="itemGroup" id="MainContent_div_ab">
-                        <div style="color: white; float: left">歐博百家樂</div>
-                        <div style="color: white; float: right; height: 20px;">
+                        <div style="color: white;">歐博百家樂</div>
+                        <div style="color: white;height: 20px;">
                             <div style="float: right; width: 20px; height: 20px;">
                                 <img src="Assets/img/icon_refresh.png" width="20" height="20" class="walletIcon imgsize" alt="" data-val="12">
                             </div>
@@ -823,8 +837,8 @@
                         </div>
                     </div>
                     <div class="itemGroup" id="MainContent_div_sa">
-                        <div style="color: white; float: left">沙龍百家樂</div>
-                        <div style="color: white; float: right; height: 20px;">
+                        <div style="color: white;">沙龍百家樂</div>
+                        <div style="color: white; height: 20px;">
                             <div style="float: right; width: 20px; height: 20px;">
                                 <img src="Assets/img/icon_refresh.png" width="20" height="20" class="walletIcon imgsize" alt="" data-val="10">
                             </div>
@@ -832,8 +846,8 @@
                         </div>
                     </div>
                     <div class="itemGroup" id="MainContent_div_wm">
-                        <div style="color: white; float: left">WM百家樂</div>
-                        <div style="color: white; float: right; height: 20px;">
+                        <div style="color: white;">WM百家樂</div>
+                        <div style="color: white;height: 20px;">
                             <div style="float: right; width: 20px; height: 20px;">
                                 <img src="Assets/img/icon_refresh.png" width="20" height="20" class="walletIcon imgsize" alt="" data-val="32">
                             </div>
@@ -842,8 +856,8 @@
                     </div>
 
                     <div class="itemGroup" id="MainContent_div_ob">
-                        <div style="color: white; float: left">任你博體育</div>
-                        <div style="color: white; float: right; height: 20px;">
+                        <div style="color: white;">任你博體育</div>
+                        <div style="color: white;height: 20px;">
                             <div style="float: right; width: 20px; height: 20px;">
                                 <img src="Assets/img/icon_refresh.png" width="20" height="20" class="walletIcon imgsize" alt="" data-val="55">
                             </div>
@@ -851,8 +865,8 @@
                         </div>
                     </div>
                     <div class="itemGroup" id="MainContent_div_ss">
-                        <div style="color: white; float: left">Super體育</div>
-                        <div style="color: white; float: right; height: 20px;">
+                        <div style="color: white;">Super體育</div>
+                        <div style="color: white;height: 20px;">
                             <div style="float: right; width: 20px; height: 20px;">
                                 <img src="Assets/img/icon_refresh.png" width="20" height="20" class="walletIcon imgsize" alt="" data-val="21">
                             </div>
@@ -860,9 +874,27 @@
                         </div>
                     </div>
 
-                    <div class="itemGroup" id="MainContent_div_rtg">
-                        <div style="color: white; float: left">DT電子</div>
-                        <div style="color: white; float: right; height: 20px;">
+                    <div class="itemGroup">
+                        <div style="color: white;">DT電子</div>
+                        <div style="color: white;height: 20px;">
+                            <div style="float: right; width: 20px; height: 20px;">
+                                <img src="Assets/img/icon_refresh.png" width="20" height="20" class="walletIcon imgsize" alt="" data-val="44">
+                            </div>
+                            <p style="margin: 0; padding-right: 34px;">-</p>
+                        </div>
+                    </div>
+                    <div class="itemGroup">
+                        <div style="color: white;">KA電子</div>
+                        <div style="color: white;height: 20px;">
+                            <div style="float: right; width: 20px; height: 20px;">
+                                <img src="Assets/img/icon_refresh.png" width="20" height="20" class="walletIcon imgsize" alt="" data-val="44">
+                            </div>
+                            <p style="margin: 0; padding-right: 34px;">-</p>
+                        </div>
+                    </div>
+                    <div class="itemGroup">
+                        <div style="color: white;">RTG電子</div>
+                        <div style="color: white;height: 20px;">
                             <div style="float: right; width: 20px; height: 20px;">
                                 <img src="Assets/img/icon_refresh.png" width="20" height="20" class="walletIcon imgsize" alt="" data-val="44">
                             </div>
@@ -870,26 +902,8 @@
                         </div>
                     </div>
                     <div class="itemGroup" id="MainContent_div_rtg">
-                        <div style="color: white; float: left">KA電子</div>
-                        <div style="color: white; float: right; height: 20px;">
-                            <div style="float: right; width: 20px; height: 20px;">
-                                <img src="Assets/img/icon_refresh.png" width="20" height="20" class="walletIcon imgsize" alt="" data-val="44">
-                            </div>
-                            <p style="margin: 0; padding-right: 34px;">-</p>
-                        </div>
-                    </div>
-                    <div class="itemGroup" id="MainContent_div_rtg">
-                        <div style="color: white; float: left">RTG電子</div>
-                        <div style="color: white; float: right; height: 20px;">
-                            <div style="float: right; width: 20px; height: 20px;">
-                                <img src="Assets/img/icon_refresh.png" width="20" height="20" class="walletIcon imgsize" alt="" data-val="44">
-                            </div>
-                            <p style="margin: 0; padding-right: 34px;">-</p>
-                        </div>
-                    </div>
-                    <div class="itemGroup" id="MainContent_div_rtg">
-                        <div style="color: white; float: left">BTX電子</div>
-                        <div style="color: white; float: right; height: 20px;">
+                        <div style="color: white;">BTX電子</div>
+                        <div style="color: white;height: 20px;">
                             <div style="float: right; width: 20px; height: 20px;">
                                 <img src="Assets/img/icon_refresh.png" width="20" height="20" class="walletIcon imgsize" alt="" data-val="44">
                             </div>
@@ -897,8 +911,8 @@
                         </div>
                     </div>
                     <div class="itemGroup" id="MainContent_div_icg">
-                        <div style="color: white; float: left">必贏電子</div>
-                        <div style="color: white; float: right; height: 20px;">
+                        <div style="color: white;">必贏電子</div>
+                        <div style="color: white;height: 20px;">
                             <div style="float: right; width: 20px; height: 20px;">
                                 <img src="Assets/img/icon_refresh.png" width="20" height="20" class="walletIcon imgsize" alt="" data-val="65">
                             </div>
@@ -906,8 +920,8 @@
                         </div>
                     </div>
                     <div class="itemGroup">
-                        <div style="color: white; float: left">SimplePlay電子</div>
-                        <div style="color: white; float: right; height: 20px;">
+                        <div style="color: white;">SimplePlay電子</div>
+                        <div style="color: white;height: 20px;">
                             <div style="float: right; width: 20px; height: 20px;">
                                 <img src="Assets/img/icon_refresh.png" width="20" height="20" class="walletIcon imgsize" alt="" data-val="65">
                             </div>
@@ -916,8 +930,8 @@
                     </div>
 
                     <div class="itemGroup">
-                        <div style="color: white; float: left">MG棋牌</div>
-                        <div style="color: white; float: right; height: 20px;">
+                        <div style="color: white;">MG棋牌</div>
+                        <div style="color: white;height: 20px;">
                             <div style="float: right; width: 20px; height: 20px;">
                                 <img src="Assets/img/icon_refresh.png" width="20" height="20" class="walletIcon imgsize" alt="" data-val="46">
                             </div>
@@ -925,8 +939,8 @@
                         </div>
                     </div>
                     <div class="itemGroup" id="MainContent_div_lucky">
-                        <div style="color: white; float: left">幸運棋牌</div>
-                        <div style="color: white; float: right; height: 20px;">
+                        <div style="color: white;">幸運棋牌</div>
+                        <div style="color: white;height: 20px;">
                             <div style="float: right; width: 20px; height: 20px;">
                                 <img src="Assets/img/icon_refresh.png" width="20" height="20" class="walletIcon imgsize" alt="" data-val="59">
                             </div>
@@ -934,8 +948,8 @@
                         </div>
                     </div>
                     <div class="itemGroup" id="MainContent_div_sb">
-                        <div style="color: white; float: left">9K彩票</div>
-                        <div style="color: white; float: right; height: 20px;">
+                        <div style="color: white;">9K彩票</div>
+                        <div style="color: white;height: 20px;">
                             <div style="float: right; width: 20px; height: 20px;">
                                 <img src="Assets/img/icon_refresh.png" width="20" height="20" class="walletIcon imgsize" alt="" data-val="51">
                             </div>
@@ -943,8 +957,8 @@
                         </div>
                     </div>
                     <div class="itemGroup" id="MainContent_div_sl">
-                        <div style="color: white; float: left">六合彩539</div>
-                        <div style="color: white; float: right; height: 20px;">
+                        <div style="color: white;">六合彩539</div>
+                        <div style="color: white;height: 20px;">
                             <div style="float: right; width: 20px; height: 20px;">
                                 <img src="Assets/img/icon_refresh.png" width="20" height="20" class="walletIcon imgsize" alt="" data-val="24">
                             </div>
