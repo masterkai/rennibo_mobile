@@ -185,6 +185,7 @@
         .gameBox .flexRow .gameTab.active {
             background-image: url(./assets/img/slotGameBG.jpg), linear-gradient(180deg, rgba(109, 114, 120, 1) 0%, rgba(0, 0, 0, 1) 100%);
             background-blend-mode: lighten;
+            box-shadow: 0 0 10px 3px #fff900;
         }
 
         .gameBox .flexRow--4item .gameTab {
@@ -196,7 +197,10 @@
         }
 
         .gameTab span {
-            font-size: 2.5rem;
+            font-size: 3.2rem;
+            background: linear-gradient(180deg, #fdf8a2 3%, #f4d97a 47%, #eec462 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         .gameTab img {
@@ -229,17 +233,6 @@
     <script type="text/javascript" src="assets/js/jquery.cookie.js"></script>
 
     <script>
-      console.log($('.flexRow .gameTab'));
-
-      $('.gameBox').each(function () {
-        let $tabList = $(this).find('.gameTab')
-        // console.log($tabList);
-        $tabList.each((current, obj) => {
-          $(obj).on('click', function () {
-            console.log('clicked');
-          })
-        })
-      })
       $(function () {
         var heightW = window.innerHeight;
 
